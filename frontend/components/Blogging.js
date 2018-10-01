@@ -6,7 +6,6 @@ import Advertisement from "./Advertisement";
 import Thermometer from "react-thermometer-component";
 import { Button } from "@zendeskgarden/react-buttons";
 import {
-  Chrome,
   Body,
   Main
 } from "@zendeskgarden/react-chrome";
@@ -42,7 +41,6 @@ class Blogging extends Component {
 
   render() {
     return (
-      <Chrome>
         <Body style={{ maxWidth: 1024 }}>
           <header>
             <blockquote>
@@ -111,7 +109,6 @@ class Blogging extends Component {
             </div>
           </Main>
         </Body>
-      </Chrome>
     );
   }
 }
