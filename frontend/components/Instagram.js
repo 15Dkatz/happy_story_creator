@@ -72,7 +72,7 @@ class Instagram extends Component {
     console.log('this.state', this.state);
 
     return (
-      <div>
+      <div className='center-page'>
         <Header title='Photo Library'></Header>
         <Link to='/' className='Home-link'>Home</Link>
         <hr />
@@ -80,9 +80,7 @@ class Instagram extends Component {
         <div>
           {
             volunteerAssets.map((asset, index) => {
-              // const id = uuid();
               const id = index;
-
               // TODO: Turn google.com into an actual blog link
               return (
                 <div
@@ -94,7 +92,7 @@ class Instagram extends Component {
                   <a className='volunteerPic'>
                     <img
                       src={asset}
-                      className={this.state.animatedId === id ? 'volunteerImg darkenImg' : 'volunteerImg'}
+                      className='volunteerImg'
                     />
                   </a>
                 </div>
@@ -109,6 +107,7 @@ class Instagram extends Component {
 
 export default Instagram;
 
+// className={this.state.animatedId === id ? 'volunteerImg darkenImg' : 'volunteerImg'}
 // <p classname='volunteerDesc'>{this.state.animatedId === id ? 'Check it' : ''}</p>
 // <iframe src='https://www.instagram.com/explore/tags/volunteering/' name='instagram'></iframe>
 // <a href='https://www.instagram.com/explore/tags/volunteering/'>Volunteering on Insta</a>
