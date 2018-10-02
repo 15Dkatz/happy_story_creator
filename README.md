@@ -21,3 +21,21 @@ These images could also appear on a modified version of the photo library.
 ### Partner spotlights
 
 Pages could be created in the future to feature our various volunteering partners. These would display a small descriptive paragraph of the partner as well as a feed of images contributed by internal employees and Instagram posts with specific hashtags
+
+### Running locally
+
+To run this project locally you will need to have Node and npm installed. A version 8.11.1 or later is required.
+This can be accomplished with `nvm` by running `nvm install 8.11.1; nvm use 8.11.1`
+
+Once Node and npm are installed you need to install the app by running `npm install` in the root directory of this repo
+
+To run this application you then need to run `PORT=1234; npm start` where `1234` can be any port you wish to run it on. Then you can visit `http://localhost:1234` or which ever port you picked to see the app
+
+### Running on Heruko
+
+To get this app running on heroku:
+1. Install the heroku cli tools and setup your login: https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+1. run `heroku create` in the root directory of this repo
+1. run `git push heroku master`
+1. run `heroku ps:scale web=1` to make sure at least one instance of the app is running
+1. run `heroku open` to check that the app is running
