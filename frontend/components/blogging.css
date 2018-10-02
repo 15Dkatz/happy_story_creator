@@ -1,0 +1,20 @@
+.blog--content {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    /* flex-direction: column; */
+}
+
+.blog--post {
+    width: 75%;
+}
+
+.blog--post--form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .sidebar {
+      width: 25%;
+  }
