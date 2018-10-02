@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Anchor } from "@zendeskgarden/react-buttons";
 
-class Form extends Component {
+class BlogItem extends Component {
   render() {
     return (
       <div>
@@ -22,4 +22,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default BlogItem;

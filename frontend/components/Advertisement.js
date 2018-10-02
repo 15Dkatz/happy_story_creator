@@ -5,7 +5,7 @@ import { Button } from "@zendeskgarden/react-buttons";
 import './advertisement.css';
 
 
-class Form extends Component {
+class Advertisement extends Component {
   render() {
     return (
       <div className="advertisement">
@@ -17,4 +17,4 @@ class Form extends Component {
   }
 }
 
-export default Form;
+export default Advertisement;

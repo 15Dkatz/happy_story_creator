@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import Form from "./Form";
 import BlogItem from "./BlogItem";
 import Advertisement from "./Advertisement";
 import Thermometer from "react-thermometer-component";
